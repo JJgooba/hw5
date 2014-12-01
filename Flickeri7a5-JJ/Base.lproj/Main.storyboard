@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="HYa-nx-Akm">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <scenes>
+        <!--Top Places-->
+        <scene sceneID="MOs-CJ-jWV">
+            <objects>
+                <tableViewController id="mF6-ZQ-FhG" customClass="TopPlacesFlickrTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="gWM-xE-AVO">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Top Places Cell" id="FAV-pH-hQF">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="FAV-pH-hQF" id="clT-SH-9bx">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="mF6-ZQ-FhG" id="0ly-xm-LkZ"/>
+                            <outlet property="delegate" destination="mF6-ZQ-FhG" id="83D-ff-ioY"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Top Places" id="EB4-m7-ke2"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HXG-i1-fjv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="510" y="-404"/>
+        </scene>
+        <!--Recently Viewed-->
+        <scene sceneID="JG6-EL-486">
+            <objects>
+                <tableViewController id="QZP-6z-zrA" customClass="RecentlyViewedFlickrTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="PTm-h0-Y0t">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Recently Viewed Cell" id="ejo-RW-A67">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ejo-RW-A67" id="3se-ut-hLd">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="QZP-6z-zrA" id="9tA-zi-lma"/>
+                            <outlet property="delegate" destination="QZP-6z-zrA" id="6Ze-mh-BXk"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Recently Viewed" id="0B6-1p-Iaj"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iNP-OO-e93" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="510" y="235"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="UU9-KG-cDP">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="HYa-nx-Akm" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="Pwf-1H-Ute">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="mF6-ZQ-FhG" kind="relationship" relationship="viewControllers" id="OIK-pD-1er"/>
+                        <segue destination="QZP-6z-zrA" kind="relationship" relationship="viewControllers" id="08n-u1-iAJ"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ULZ-KQ-Xon" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-22" y="-84"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

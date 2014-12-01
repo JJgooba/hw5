@@ -1,0 +1,469 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6FE17C491A29693400568D41 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FE17C481A29693400568D41 /* main.m */; };
+		6FE17C4C1A29693400568D41 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FE17C4B1A29693400568D41 /* AppDelegate.m */; };
+		6FE17C4F1A29693400568D41 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FE17C4E1A29693400568D41 /* ViewController.m */; };
+		6FE17C521A29693400568D41 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FE17C501A29693400568D41 /* Main.storyboard */; };
+		6FE17C541A29693400568D41 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FE17C531A29693400568D41 /* Images.xcassets */; };
+		6FE17C571A29693400568D41 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6FE17C551A29693400568D41 /* LaunchScreen.xib */; };
+		6FE17C631A29693500568D41 /* Flickeri7a5_JJTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FE17C621A29693500568D41 /* Flickeri7a5_JJTests.m */; };
+		6FE17C6E1A296D8700568D41 /* Main_iPad_Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FE17C6C1A296D8700568D41 /* Main_iPad_Storyboard.storyboard */; };
+		6FE17C711A296F2900568D41 /* FlickrPhotoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FE17C701A296F2900568D41 /* FlickrPhotoTableViewController.m */; };
+		6FE17C771A296F7C00568D41 /* RecentlyViewedFlickrTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FE17C761A296F7C00568D41 /* RecentlyViewedFlickrTableViewController.m */; };
+		6FE17C7A1A296F9900568D41 /* TopPlacesFlickrTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FE17C791A296F9900568D41 /* TopPlacesFlickrTableViewController.m */; };
+		6FE17C7E1A29726E00568D41 /* FlickrFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FE17C7D1A29726E00568D41 /* FlickrFetcher.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6FE17C5D1A29693500568D41 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6FE17C3B1A29693400568D41 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6FE17C421A29693400568D41;
+			remoteInfo = "Flickeri7a5-JJ";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6FE17C431A29693400568D41 /* Flickeri7a5-JJ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Flickeri7a5-JJ.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FE17C471A29693400568D41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6FE17C481A29693400568D41 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6FE17C4A1A29693400568D41 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6FE17C4B1A29693400568D41 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6FE17C4D1A29693400568D41 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		6FE17C4E1A29693400568D41 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		6FE17C511A29693400568D41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6FE17C531A29693400568D41 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		6FE17C561A29693400568D41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		6FE17C5C1A29693500568D41 /* Flickeri7a5-JJTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Flickeri7a5-JJTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FE17C611A29693500568D41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6FE17C621A29693500568D41 /* Flickeri7a5_JJTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Flickeri7a5_JJTests.m; sourceTree = "<group>"; };
+		6FE17C6D1A296D8700568D41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad_Storyboard.storyboard; sourceTree = "<group>"; };
+		6FE17C6F1A296F2900568D41 /* FlickrPhotoTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrPhotoTableViewController.h; sourceTree = "<group>"; };
+		6FE17C701A296F2900568D41 /* FlickrPhotoTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrPhotoTableViewController.m; sourceTree = "<group>"; };
+		6FE17C751A296F7C00568D41 /* RecentlyViewedFlickrTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecentlyViewedFlickrTableViewController.h; sourceTree = "<group>"; };
+		6FE17C761A296F7C00568D41 /* RecentlyViewedFlickrTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecentlyViewedFlickrTableViewController.m; sourceTree = "<group>"; };
+		6FE17C781A296F9900568D41 /* TopPlacesFlickrTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TopPlacesFlickrTableViewController.h; path = ../TopPlacesFlickrTableViewController.h; sourceTree = "<group>"; };
+		6FE17C791A296F9900568D41 /* TopPlacesFlickrTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TopPlacesFlickrTableViewController.m; path = ../TopPlacesFlickrTableViewController.m; sourceTree = "<group>"; };
+		6FE17C7B1A29726E00568D41 /* FlickrAPIKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrAPIKey.h; sourceTree = "<group>"; };
+		6FE17C7C1A29726E00568D41 /* FlickrFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrFetcher.h; sourceTree = "<group>"; };
+		6FE17C7D1A29726E00568D41 /* FlickrFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrFetcher.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6FE17C401A29693400568D41 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FE17C591A29693500568D41 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6FE17C3A1A29693400568D41 = {
+			isa = PBXGroup;
+			children = (
+				6FE17C451A29693400568D41 /* Flickeri7a5-JJ */,
+				6FE17C5F1A29693500568D41 /* Flickeri7a5-JJTests */,
+				6FE17C441A29693400568D41 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6FE17C441A29693400568D41 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6FE17C431A29693400568D41 /* Flickeri7a5-JJ.app */,
+				6FE17C5C1A29693500568D41 /* Flickeri7a5-JJTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6FE17C451A29693400568D41 /* Flickeri7a5-JJ */ = {
+			isa = PBXGroup;
+			children = (
+				6FE17C501A29693400568D41 /* Main.storyboard */,
+				6FE17C6C1A296D8700568D41 /* Main_iPad_Storyboard.storyboard */,
+				6FE17C6F1A296F2900568D41 /* FlickrPhotoTableViewController.h */,
+				6FE17C701A296F2900568D41 /* FlickrPhotoTableViewController.m */,
+				6FE17C781A296F9900568D41 /* TopPlacesFlickrTableViewController.h */,
+				6FE17C791A296F9900568D41 /* TopPlacesFlickrTableViewController.m */,
+				6FE17C751A296F7C00568D41 /* RecentlyViewedFlickrTableViewController.h */,
+				6FE17C761A296F7C00568D41 /* RecentlyViewedFlickrTableViewController.m */,
+				6FE17C4A1A29693400568D41 /* AppDelegate.h */,
+				6FE17C4B1A29693400568D41 /* AppDelegate.m */,
+				6FE17C4D1A29693400568D41 /* ViewController.h */,
+				6FE17C4E1A29693400568D41 /* ViewController.m */,
+				6FE17C7B1A29726E00568D41 /* FlickrAPIKey.h */,
+				6FE17C7C1A29726E00568D41 /* FlickrFetcher.h */,
+				6FE17C7D1A29726E00568D41 /* FlickrFetcher.m */,
+				6FE17C531A29693400568D41 /* Images.xcassets */,
+				6FE17C551A29693400568D41 /* LaunchScreen.xib */,
+				6FE17C461A29693400568D41 /* Supporting Files */,
+			);
+			path = "Flickeri7a5-JJ";
+			sourceTree = "<group>";
+		};
+		6FE17C461A29693400568D41 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6FE17C471A29693400568D41 /* Info.plist */,
+				6FE17C481A29693400568D41 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6FE17C5F1A29693500568D41 /* Flickeri7a5-JJTests */ = {
+			isa = PBXGroup;
+			children = (
+				6FE17C621A29693500568D41 /* Flickeri7a5_JJTests.m */,
+				6FE17C601A29693500568D41 /* Supporting Files */,
+			);
+			path = "Flickeri7a5-JJTests";
+			sourceTree = "<group>";
+		};
+		6FE17C601A29693500568D41 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6FE17C611A29693500568D41 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6FE17C421A29693400568D41 /* Flickeri7a5-JJ */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6FE17C661A29693500568D41 /* Build configuration list for PBXNativeTarget "Flickeri7a5-JJ" */;
+			buildPhases = (
+				6FE17C3F1A29693400568D41 /* Sources */,
+				6FE17C401A29693400568D41 /* Frameworks */,
+				6FE17C411A29693400568D41 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Flickeri7a5-JJ";
+			productName = "Flickeri7a5-JJ";
+			productReference = 6FE17C431A29693400568D41 /* Flickeri7a5-JJ.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6FE17C5B1A29693500568D41 /* Flickeri7a5-JJTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6FE17C691A29693500568D41 /* Build configuration list for PBXNativeTarget "Flickeri7a5-JJTests" */;
+			buildPhases = (
+				6FE17C581A29693500568D41 /* Sources */,
+				6FE17C591A29693500568D41 /* Frameworks */,
+				6FE17C5A1A29693500568D41 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6FE17C5E1A29693500568D41 /* PBXTargetDependency */,
+			);
+			name = "Flickeri7a5-JJTests";
+			productName = "Flickeri7a5-JJTests";
+			productReference = 6FE17C5C1A29693500568D41 /* Flickeri7a5-JJTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6FE17C3B1A29693400568D41 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = JJ;
+				TargetAttributes = {
+					6FE17C421A29693400568D41 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					6FE17C5B1A29693500568D41 = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = 6FE17C421A29693400568D41;
+					};
+				};
+			};
+			buildConfigurationList = 6FE17C3E1A29693400568D41 /* Build configuration list for PBXProject "Flickeri7a5-JJ" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6FE17C3A1A29693400568D41;
+			productRefGroup = 6FE17C441A29693400568D41 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6FE17C421A29693400568D41 /* Flickeri7a5-JJ */,
+				6FE17C5B1A29693500568D41 /* Flickeri7a5-JJTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6FE17C411A29693400568D41 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FE17C6E1A296D8700568D41 /* Main_iPad_Storyboard.storyboard in Resources */,
+				6FE17C521A29693400568D41 /* Main.storyboard in Resources */,
+				6FE17C571A29693400568D41 /* LaunchScreen.xib in Resources */,
+				6FE17C541A29693400568D41 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FE17C5A1A29693500568D41 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6FE17C3F1A29693400568D41 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FE17C771A296F7C00568D41 /* RecentlyViewedFlickrTableViewController.m in Sources */,
+				6FE17C4F1A29693400568D41 /* ViewController.m in Sources */,
+				6FE17C7E1A29726E00568D41 /* FlickrFetcher.m in Sources */,
+				6FE17C4C1A29693400568D41 /* AppDelegate.m in Sources */,
+				6FE17C711A296F2900568D41 /* FlickrPhotoTableViewController.m in Sources */,
+				6FE17C7A1A296F9900568D41 /* TopPlacesFlickrTableViewController.m in Sources */,
+				6FE17C491A29693400568D41 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FE17C581A29693500568D41 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FE17C631A29693500568D41 /* Flickeri7a5_JJTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6FE17C5E1A29693500568D41 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6FE17C421A29693400568D41 /* Flickeri7a5-JJ */;
+			targetProxy = 6FE17C5D1A29693500568D41 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6FE17C501A29693400568D41 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6FE17C511A29693400568D41 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6FE17C551A29693400568D41 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6FE17C561A29693400568D41 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		6FE17C6C1A296D8700568D41 /* Main_iPad_Storyboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6FE17C6D1A296D8700568D41 /* Base */,
+			);
+			name = Main_iPad_Storyboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6FE17C641A29693500568D41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6FE17C651A29693500568D41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6FE17C671A29693500568D41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Flickeri7a5-JJ/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6FE17C681A29693500568D41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Flickeri7a5-JJ/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6FE17C6A1A29693500568D41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Flickeri7a5-JJTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Flickeri7a5-JJ.app/Flickeri7a5-JJ";
+			};
+			name = Debug;
+		};
+		6FE17C6B1A29693500568D41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Flickeri7a5-JJTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Flickeri7a5-JJ.app/Flickeri7a5-JJ";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6FE17C3E1A29693400568D41 /* Build configuration list for PBXProject "Flickeri7a5-JJ" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6FE17C641A29693500568D41 /* Debug */,
+				6FE17C651A29693500568D41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6FE17C661A29693500568D41 /* Build configuration list for PBXNativeTarget "Flickeri7a5-JJ" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6FE17C671A29693500568D41 /* Debug */,
+				6FE17C681A29693500568D41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6FE17C691A29693500568D41 /* Build configuration list for PBXNativeTarget "Flickeri7a5-JJTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6FE17C6A1A29693500568D41 /* Debug */,
+				6FE17C6B1A29693500568D41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6FE17C3B1A29693400568D41 /* Project object */;
+}
