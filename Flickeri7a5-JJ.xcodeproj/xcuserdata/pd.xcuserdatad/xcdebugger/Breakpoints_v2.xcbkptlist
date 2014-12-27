@@ -9,29 +9,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "TopPlacesFlickrTableViewController.m"
-            timestampString = "439004658.283802"
+            filePath = "Flickeri7a5-JJ/FlickrFetcher.m"
+            timestampString = "441277320.312856"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
-            landmarkName = "-fetchPhotos"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TopPlacesFlickrTableViewController.m"
-            timestampString = "439004658.283802"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "33"
-            endingLineNumber = "33"
-            landmarkName = "-fetchPhotos"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
+            landmarkName = "+URLforPhoto:format:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

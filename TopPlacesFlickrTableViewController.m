@@ -17,27 +17,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self fetchPhotos];
+    [super fetchPhotosForURL:[FlickrFetcher URLforTopPlaces]];
     // Do any additional setup after loading the view.
 }
 
--(void) fetchPhotos
-{
-    NSURL *url = [FlickrFetcher URLforTopPlaces];
-    NSData *jsonResults = [NSData dataWithContentsOfURL:url];
-    NSDictionary *propertyListResults = [NSJSONSerialization JSONObjectWithData:jsonResults options:0 error:NULL];
-    NSLog(@"TopPhotos results: %@", propertyListResults);
-    
-/*    NSURLSession *session;
-    __block NSDictionary *propertyListResults;
-    NSURLSessionDataTask *task = [session dataTaskWithURL:url completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
-        propertyListResults = [NSJSONSerialization JSONObjectWithData:data options:0 error:NULL];
-        NSLog(@"TopPhotos results: %@", propertyListResults);
-    }];
-    [task resume];
-*/
-    self.photos = nil; // implement later
-}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

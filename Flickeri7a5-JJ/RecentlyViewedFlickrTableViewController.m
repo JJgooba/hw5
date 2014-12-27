@@ -7,6 +7,7 @@
 //
 
 #import "RecentlyViewedFlickrTableViewController.h"
+#import "FlickrFetcher.h"
 
 @interface RecentlyViewedFlickrTableViewController ()
 
@@ -16,6 +17,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [super fetchPhotosForURL:[FlickrFetcher URLforRecentGeoreferencedPhotos]];
+    NSLog(@"recent");
     // Do any additional setup after loading the view.
 }
 

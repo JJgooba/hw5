@@ -10,4 +10,5 @@
 
 @interface FlickrPhotoTableViewController : UITableViewController
 @property (strong, nonatomic) NSArray *photos; // of Flickr photo NSDictionary
+-(void) fetchPhotosForURL:(NSURL *)url;
 @end
