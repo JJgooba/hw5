@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6FA7A88B1A4D240500F0D69D /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FA7A88A1A4D240500F0D69D /* ImageViewController.m */; };
+		6FA7A8C21A4F933000F0D69D /* SplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FA7A8C11A4F933000F0D69D /* SplitViewController.m */; };
 		6FE17C491A29693400568D41 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FE17C481A29693400568D41 /* main.m */; };
 		6FE17C4C1A29693400568D41 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FE17C4B1A29693400568D41 /* AppDelegate.m */; };
 		6FE17C4F1A29693400568D41 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FE17C4E1A29693400568D41 /* ViewController.m */; };
@@ -35,6 +36,8 @@
 /* Begin PBXFileReference section */
 		6FA7A8891A4D240500F0D69D /* ImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageViewController.h; sourceTree = "<group>"; };
 		6FA7A88A1A4D240500F0D69D /* ImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageViewController.m; sourceTree = "<group>"; };
+		6FA7A8C01A4F933000F0D69D /* SplitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SplitViewController.h; path = ../SplitViewController.h; sourceTree = "<group>"; };
+		6FA7A8C11A4F933000F0D69D /* SplitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SplitViewController.m; path = ../SplitViewController.m; sourceTree = "<group>"; };
 		6FE17C431A29693400568D41 /* Flickeri7a5-JJ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Flickeri7a5-JJ.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FE17C471A29693400568D41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6FE17C481A29693400568D41 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -101,6 +104,8 @@
 			children = (
 				6FE17C501A29693400568D41 /* Main.storyboard */,
 				6FE17C6C1A296D8700568D41 /* Main_iPad_Storyboard.storyboard */,
+				6FA7A8C01A4F933000F0D69D /* SplitViewController.h */,
+				6FA7A8C11A4F933000F0D69D /* SplitViewController.m */,
 				6FE17C6F1A296F2900568D41 /* FlickrPhotoTableViewController.h */,
 				6FE17C701A296F2900568D41 /* FlickrPhotoTableViewController.m */,
 				6FE17C781A296F9900568D41 /* TopPlacesFlickrTableViewController.h */,
@@ -257,6 +262,7 @@
 				6FE17C4C1A29693400568D41 /* AppDelegate.m in Sources */,
 				6FE17C711A296F2900568D41 /* FlickrPhotoTableViewController.m in Sources */,
 				6FE17C7A1A296F9900568D41 /* TopPlacesFlickrTableViewController.m in Sources */,
+				6FA7A8C21A4F933000F0D69D /* SplitViewController.m in Sources */,
 				6FE17C491A29693400568D41 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -392,7 +398,7 @@
 				INFOPLIST_FILE = "Flickeri7a5-JJ/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -403,7 +409,7 @@
 				INFOPLIST_FILE = "Flickeri7a5-JJ/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};

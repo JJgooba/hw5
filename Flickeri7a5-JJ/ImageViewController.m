@@ -40,7 +40,7 @@
 
 -(void)startDownloadingImage
 {
-    self.image = nil;
+//    self.image = nil;
     if (self.imageURL) {
         [self.spinner startAnimating];
         NSURLRequest *request = [NSURLRequest requestWithURL:self.imageURL];
@@ -52,6 +52,7 @@
                     UIImage *image = [UIImage imageWithData:[NSData dataWithContentsOfURL:localFile]];
                     dispatch_async(dispatch_get_main_queue(), ^{self.image = image;});
                 }
+                NSLog(@"image download complete.");
             }
         }];
         [task resume];
@@ -71,16 +72,27 @@
 
 -(void) setImage:(UIImage *)image
 {
+    NSLog(@"set the image");
+    self.scrollView.zoomScale = 1.0;
     self.imageView.image = image;
-    [self.imageView sizeToFit]; // won't work without this!
+    self.imageView.frame = CGRectMake(0, 0, image.size.width, image.size.height);
+//    [self.imageView sizeToFit]; // won't work without this!
     self.scrollView.contentSize = self.image ? self.image.size : CGSizeZero; //protects against undefined self.image.size if self.image is nil
     [self.spinner stopAnimating];
+//    self.view.backgroundColor = [UIColor redColor];
+    NSLog(@"image size = (%.0f,%.0f)", image.size.width, image.size.height);
+    NSLog(@"imageView.fram = %.0f, %.0f", self.imageView.image.size.width, self.imageView.image.size.height);
 }
 
 -(void)viewDidLoad
 {
     [super viewDidLoad];
-    [self.scrollView addSubview:self.imageView];
+//    [self.scrollView addSubview:self.imageView];
 //    [self.view addSubview:self.imageView];
+}
+
+-(void)awakeFromNib
+{
+        [self.scrollView addSubview:self.imageView];
 }
 @end

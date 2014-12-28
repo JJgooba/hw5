@@ -40,10 +40,22 @@
 }
 #pragma mark - UITableViewDelegate
 
--(void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {  //this method is only called from an iPad, so no need to check on which device you're using
     id detail = self.splitViewController.viewControllers[1]; //the detail pane
-    [self prepareImageViewController:detail toDisplayPhoto:self.photos[indexPath.row]];
+    if (detail) {
+        if ([detail isKindOfClass:[UINavigationController class]])
+            detail = [((UINavigationController *)detail).viewControllers firstObject];
+        if ([detail isKindOfClass:[ImageViewController class]]) {
+            [self prepareImageViewController:detail toDisplayPhoto:self.photos[indexPath.row]];
+            NSLog(@"selected row %ld", (long)indexPath.row);
+            UIViewController * ivc = detail;
+            ivc.view.backgroundColor = [UIColor blueColor];
+        }
+        else NSLog(@"detail is not an imageViewController");
+    }
+    else
+        NSLog(@"detail view controller was nil!");
 }
 
 #pragma mark - UITableView data source
@@ -76,8 +88,6 @@
 
 -(void) fetchPhotosForURL:(NSURL *)url
 {
-    
-    //    NSURL *url = [FlickrFetcher URLforTopPlaces];
     NSURLRequest *urlRequest = [NSURLRequest requestWithURL:url];
     /*
      NSData *jsonResults = [NSData dataWithContentsOfURL:url];
@@ -102,38 +112,11 @@
 }
 
 /*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
-
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
-
-/*
 // Override to support rearranging the table view.
 - (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
 }
 */
 
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
 
 -(void)prepareImageViewController:(ImageViewController *)ivc toDisplayPhoto:(NSDictionary *)photo
 {
@@ -147,7 +130,7 @@
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-
+    NSLog(@"segueing to imageViewController");
     NSIndexPath *indexPath = [self.tableView indexPathForCell:sender]; // retrieve indexpath of the sending cell
     if (indexPath)
         if ([segue.identifier isEqualToString:@"Display Photo"])
